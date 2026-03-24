@@ -30,7 +30,7 @@ public class MergeSortTest {
     public static void testTimingExperiment() {
         System.out.println("\n=== Timing Experiment: 1000 MergeSort operations ===");
 
-        int[] sizes = {100, 200, 400, 800, 1600, 3200, 6400};
+        int[] sizes = {100, 200, 400, 800, 1600, 3200, 6400,1000000};
         Random rand = new Random();
 
         for (int size : sizes) {
