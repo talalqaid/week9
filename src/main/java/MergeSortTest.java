@@ -28,8 +28,6 @@ public class MergeSortTest {
     }
 
     public static void testTimingExperiment() {
-        System.out.println("\n=== Timing Experiment: 1000 MergeSort operations ===");
-
         int[] sizes = {100, 200, 400, 800, 1600, 3200, 6400,1000000};
         Random rand = new Random();
 
@@ -42,12 +40,13 @@ public class MergeSortTest {
                     arr[j] = rand.nextInt(100000);
                 }
                 MergeSort.mergeSort(arr);
+                //Arrays.sort(arr);
             }
 
             long end = System.currentTimeMillis();
             long totalTime = end - start;
 
-            System.out.println("Array size " + size + ": " + totalTime + " ms for 1000 operations");
+            System.out.println("Array size " + size + ": " + totalTime);
         }
     }
 }
